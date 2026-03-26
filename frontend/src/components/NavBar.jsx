@@ -29,7 +29,7 @@ const NavBar = () => {
             </NavLink>
             
         </ul>
-        <div className='flex item-center gap-6'>
+        <div className='flex items-center gap-6'>
             <img src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
             <div className='group relative'>
                 <img src={assets.profile_icon} className='w-5 cursor-pointer' alt="" />
@@ -54,10 +54,10 @@ const NavBar = () => {
                     <img onClick={()=>setVisible(false)} className='h-4 rotate-180' src={assets.dropdown_icon} alt="" />
                     <p>Back</p>
                 </div>
-                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-r border' to="/">Home</NavLink>
-                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-r border' to="/collection">Collection</NavLink>
-                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-r border' to="/about">About</NavLink>
-                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-r border' to="/contact">Contact</NavLink>
+                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-4 border' to="/">Home</NavLink>
+                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-4 border' to="/collection">Collection</NavLink>
+                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-4 border' to="/about">About</NavLink>
+                <NavLink onClick={()=>setVisible(false)} className='py-2 pl-4 border' to="/contact">Contact</NavLink>
             </div>
             
         </div>
